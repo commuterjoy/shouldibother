@@ -43,7 +43,7 @@
                     return test.join(':')
                     }).join(',')
 
-            document.write('<img src="/log?support=' + queryString + '"/>');
+            document.write('<img src="/log?support=' + encodeURI(queryString) + '"/>');
 
             // display test results on client
             support.forEach(function(test){

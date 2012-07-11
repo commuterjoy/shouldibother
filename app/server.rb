@@ -6,10 +6,21 @@ get '/' do
 end
 
 get '/log' do
-    params[:support].split(',').each do |test|
+    
+    f = params[:support].split(',')
+    f << 'navigator.userAgent:' + request.env['HTTP_USER_AGENT']
+
+    puts '%27s' % '---'
+    
+    f.map { |test|
         tokens = test.split(':')
-        puts "%s \t %s" % [ tokens.first, tokens[1] ]
-    end
-    # FIXME return something
+        puts "%25s %s" % [ tokens.first, tokens[1] ]
+    }
+
+    puts '%27s' % '---'
+   
+    content_type 'image/gif'
+    IO.read('app/public/1px.gif')
+
 end
 
