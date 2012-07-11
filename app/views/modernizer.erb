@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <style>
+            body { font-family: monospace; }
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+        <script type="text/javascript" src="/vendor/modernizr.custom.99985.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // window.addEventListener("deviceorientation", handleOrientation, true);
+            // https://developer.mozilla.org/en/DOM/Orientation_and_motion_data_explained
+
+            var support = [
+              'Modernizr.fontface',
+              'Modernizr.audio', 
+              'Modernizr.video',
+              'Modernizr.history',
+              'Modernizr.svg',
+              'Modernizr.canvas',
+              'Modernizr.geolocation',
+              'Modernizr.localstorage',
+              'Modernizr.indexeddb',
+              'Modernizr.touch',
+              'Modernizr.webgl',
+              'Modernizr.cssanimations',
+              'window.innerWidth',
+              'window.innerHeight',
+              'window.devicePixelRatio',
+              'navigator.battery',
+              'screen.colorDepth',
+              'navigator.language',
+              'window.performance',
+              'window.msPerformance',
+              'window.webkitPerformance',
+              'window.mozPerformance'
+            ].map(function(test){
+                    return [ test, eval(test) ]
+                    });
+
+            // log test results on the server
+            var queryString = support.map(function(test){
+                    return test.join(':')
+                    }).join(',')
+
+            document.write('<img src="/log?support=' + queryString + '"/>');
+
+            // display test results on client
+            support.forEach(function(test){
+                document.write('<li>' + test[0] + ' - ' + test[1]);
+                });
+            
+        </script>
+        Foo
+    </body>
+</html>
+
