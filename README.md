@@ -21,26 +21,30 @@ Optionally you can expose this to the world using proxylocal.
 
 [Visiting the application](http://localhost:9292/) will generate an entry in the Sinatra logs, Eg.
 
-    Modernizr.fontface       true
-    Modernizr.audio          true
-    Modernizr.video          true
-    Modernizr.history        true
-    Modernizr.svg            true
-    Modernizr.canvas         true
-    Modernizr.geolocation    true
-    Modernizr.localstorage   true
-    Modernizr.indexeddb      true
-    Modernizr.touch          false
-    Modernizr.webgl          true
-    Modernizr.cssanimations  true
-    window.innerWidth        400
-    window.innerHeight       178
-    window.devicePixelRatio  1
-    navigator.battery    
-    screen.colorDepth        24
-    navigator.language       en-US
-    window.performance       [object Performance]
-    window.msPerformance     
-    window.webkitPerformance     
+```
+                        ---
+       Modernizr.fontface true
+          Modernizr.audio true
+          Modernizr.video true
+        Modernizr.history true
+            Modernizr.svg true
+         Modernizr.canvas true
+    Modernizr.geolocation true
+   Modernizr.localstorage true
+      Modernizr.indexeddb true
+          Modernizr.touch false
+          Modernizr.webgl true
+  Modernizr.cssanimations true
+        window.innerWidth 993
+       window.innerHeight 506
+  window.devicePixelRatio 1
+        navigator.battery 
+        screen.colorDepth 24
+       navigator.language en-US
+       window.performance [object Performance]
+     window.msPerformance 
+ window.webkitPerformance 
     window.mozPerformance 
-
+      navigator.userAgent Mozilla/5.0 (Macintosh; ...
+                        ---
+```
