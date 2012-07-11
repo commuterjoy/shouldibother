@@ -1,12 +1,12 @@
-Evaluates a user-agent's client-side capabilities using Modernizer and
+Evaluates a user-agent's client-side capabilities using [Modernizr](http://modernizr.com) and
 displays the support information and a few other useful properties in an
 HTML document.
 
-Because we might want to record this information for posterity the
+In this sense, shouldibother is a bit like [caniuse](http://caniuse.com).
+
+But because we might want to record this information for posterity the
 client logs the same support information on the server and produces a
 simple report.
-
-In this sense, shouldibother is a bit like [caniuse](http://caniuse.com).
 
 Usage
 -----
