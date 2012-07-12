@@ -19,6 +19,7 @@ get '/log' do
 
     puts '%27s' % '---'
    
+    cache_control :no_cache, :max_age => 0
     content_type 'image/gif'
     IO.read('app/public/1px.gif')
 

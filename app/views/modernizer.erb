@@ -53,7 +53,7 @@
                         return test.join(':')
                         }).join(',')
 
-                print('<img src="/log?support=' + encodeURI(queryString) + '"/>');
+                print('<img src="/log?support=' + encodeURI(queryString) + '&' + Math.random(10000000) + '"/>');
 
                 // display test results on client
                 support.forEach(function(test){
