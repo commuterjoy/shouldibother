@@ -8,6 +8,9 @@ But because we might want to record this information for posterity the
 client logs the same support information on the server and produces a
 simple report.
 
+[We](http://guardian.co.uk) use this for keeping a record of the feature sets of the 
+devices in our test bench.
+
 Usage
 -----
 
